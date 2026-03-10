@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: bolgapp
+
+server:
+  port: 8081
+
+profiles:
+  active: dev
