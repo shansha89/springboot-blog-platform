@@ -1,9 +1,13 @@
 spring:
   application:
     name: bolgapp
+  profiles: # Move this inside the spring: block
+    active: dev
 
 server:
   port: 8081
 
-profiles:
-  active: dev
+logging:
+  level:
+    org:
+      flywaydb: DEBUG
