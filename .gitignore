@@ -31,3 +31,25 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# ─── Environment configs (contain secrets) ───────────
+src/main/resources/application-dev.yml
+src/main/resources/application-qa.yml
+src/main/resources/application-prod.yml
+
+# ─── Example/template files (commit these instead) ───
+!src/main/resources/application-dev.yml.example
+!src/main/resources/application-qa.yml.example
+!src/main/resources/application-prod.yml.example
+
+# ─── Logs ────────────────────────────────────────────
+*.log
+logs/
+
+# ─── OS files ────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── Environment variables ───────────────────────────
+.env
+.env.*
